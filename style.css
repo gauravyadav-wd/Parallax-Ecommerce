@@ -1,0 +1,420 @@
+/* GLOBAL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 40px;
+  color: black;
+  border: none;
+  border-radius: 500px;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* NAVBAR */
+
+nav {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(19, 26, 34, 0.7);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  transition: 0.5s;
+  font-family: "Rubik", sans-serif;
+  color: #c1c7c9;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  margin: 0;
+}
+.nav-items a {
+  padding: 10px;
+}
+
+.nav-item {
+  list-style: none;
+  padding: 5px;
+  transition: 0.3s;
+  border-radius: 10px;
+}
+
+.current-page {
+  background-color: black;
+  border-radius: 100px;
+  padding: 10px;
+}
+
+.nav-search {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-search input {
+  border-radius: 100px;
+  border-color: transparent;
+  padding: 0 5px;
+  width: 70%;
+}
+
+.nav-search input:focus {
+  outline: none;
+}
+
+.nav-search button {
+  background-color: transparent;
+  padding: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: rgba(193, 199, 201, 1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 1rem;
+}
+
+.logo-name {
+  font-size: 20px;
+  align-self: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* PARALLAX HEADER*/
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  perspective: 10px;
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Rubik", sans-serif;
+  background-color: #e7e8e9;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+  margin-bottom: 30px;
+}
+
+.hero-text {
+  margin: 10rem;
+}
+
+.background {
+  transform: translateZ(-10px) scale(2);
+}
+.background {
+  position: absolute;
+  height: 100%;
+  width: 101%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+.browse-btn {
+  font-size: 20px;
+  padding: 10px 40px;
+  color: black;
+  border: none;
+  border-radius: 500px;
+  text-decoration: none;
+  margin-top: 10px;
+  background-color: #fff;
+  color: black;
+  transition: 0.3s all;
+}
+
+.browse-btn:hover {
+  cursor: pointer;
+  background-color: #131a22;
+  color: white;
+}
+
+/* CAROUSEL */
+.carousel-container {
+  /* height: 400px; */
+  background-color: #e7e8e9;
+}
+
+/* PRODUCTS SECTION */
+
+.products {
+  background-color: #e7e8e9;
+}
+.products h1 {
+  font-size: 3rem;
+}
+
+.items {
+  width: 80%;
+  margin: auto;
+}
+.items h3 {
+  font-size: 3rem;
+}
+
+.item {
+  position: relative;
+  overflow: hidden;
+}
+
+.item img {
+  transition: 0.3s;
+  filter: contrast(70%);
+}
+
+.item:hover img {
+  transform: scale(1.03);
+  filter: contrast(100%);
+}
+.item:hover {
+  cursor: pointer;
+}
+
+.item-content {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translateX(-50%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* LIMITED EDITION SECTION */
+
+.limited-edition {
+  margin: 8rem 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./img/limited-edition.jpg");
+  color: white;
+}
+
+.limited-edition-text {
+  padding: 10rem;
+}
+
+.limited-edition-text h5 {
+  font-size: 3rem;
+}
+.limited-edition-text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.limited-edition-text p {
+  font-size: 1.5rem;
+}
+
+.limited-edition-button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* SERVICES SECTION */
+
+.services {
+  width: 80%;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.services h2 span {
+  font-size: 5rem;
+}
+
+.services h4 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.services p {
+  font-size: 1.5rem;
+}
+
+.service-item {
+  padding: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #131a22;
+  color: #c1c7c9;
+  padding: 40px;
+  position: relative;
+}
+
+.footer-arrow {
+  position: absolute;
+  right: 40px;
+  bottom: 20px;
+}
+
+.footer-content {
+  /* display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-wrap: wrap; */
+  width: 80%;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 13px;
+}
+
+footer p {
+  font-size: 15px;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  list-style: none;
+  font-size: 13px;
+}
+
+.subscribe-btn {
+  padding: 5px 20px;
+  background-color: white;
+  color: black;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #c1c7c9;
+}
+.company p {
+  font-size: 20px;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscribe input {
+  font-size: 15px;
+  width: 70%;
+}
+
+/* SMALLER SCREENS */
+
+@media screen and (max-width: 965px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .nav-items {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .footer-content {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-text {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  .limited-edition-text {
+    padding: 5rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .carousel-img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .products h1 {
+    font-size: 20px;
+  }
+  .limited-edition-text {
+    padding: 3rem;
+  }
+  .limited-edition-text h5 {
+    font-size: 2rem;
+  }
+  .limited-edition-text h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .limited-edition-button {
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+}
